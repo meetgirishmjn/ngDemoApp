@@ -1,0 +1,36 @@
+.divReportCanvas {
+  min-height: 500px;
+  border: 0px dashed black;
+}
+
+
+.add-widget-button {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.mat-drawer-shown{
+    background-color:#fff!important;
+}
+
+.grid-stack-item-content {
+  color: #2c3e50;
+  text-align: center;
+  background-color: white;
+}
+
+
+div.shadow:hover {
+  -moz-box-shadow: 0 0 8px #1fb5ad;
+  -webkit-box-shadow: 0 0 8px #1fb5ad;
+  box-shadow: 0 0 8px #1fb5ad;
+}
+
+div.shadowFix {
+  -moz-box-shadow: 0 0 8px #1fb5ad;
+  -webkit-box-shadow: 0 0 8px #1fb5ad;
+  box-shadow: 0 0 8px #1fb5ad;
+}
+
+.widgetContainerNoFlow {
+  overflow: hidden !important;
+}

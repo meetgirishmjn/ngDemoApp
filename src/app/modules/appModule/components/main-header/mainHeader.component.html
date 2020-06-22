@@ -1,0 +1,46 @@
+<mat-toolbar class="header" style="vertical-align:middle">
+  <!--<button fxHide.gt-xs mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>-->
+
+  <span *ngIf="isShowCompText" class="app-title">My APP</span>
+
+  <img *ngIf="!isShowCompText"  width="200" height="40" src="assets/comp-logo.png" />
+
+
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        
+      </li>
+      <li>
+       
+      </li>
+      <li>
+        <a mat-raised-button href="javascript:void(0)" [matMenuTriggerFor]="menuUserProfile" style="padding:5px;">
+          <img style="width:40px;height:40px;border-radius:40px;margin:2px;" src="assets/user-pic.png" />
+          <span style="display: inline-block;    vertical-align: middle;    padding: 0 20px 0 10px;    line-height: 15px;">
+            Girish Mahajan
+            <small style="    display: block;    opacity: 0.5;">Administrator</small>
+          </span>
+        </a>
+        <mat-menu #menuUserProfile="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </li>
+      <li>
+        <button mat-icon-button>
+          <mat-icon>menu</mat-icon>
+        </button>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
